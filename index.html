@@ -1,85 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Amolshid Manob Kallan Society</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amolshid Manob Kallan Society</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f5f5f5;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    .header {
-      background: #0a7c3e;
-      padding: 20px;
-      color: white;
-    }
+<style>
 
-    .header img {
-      width: 120px;
-    }
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f4f7f6;
+color:#333;
+}
 
-    .section {
-      padding: 30px 20px;
-    }
+/* NAVBAR */
+header{
+background:linear-gradient(90deg,#0a7c3e,#14a44d);
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+position:sticky;
+top:0;
+z-index:100;
+}
 
-    .gallery img {
-      width: 250px;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
+header h1{
+margin:0;
+font-size:20px;
+}
 
-    .contact {
-      background: #e0e0e0;
-      padding: 20px;
-      margin-top: 30px;
-    }
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
+}
 
-    a {
-      color: green;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* HERO SECTION */
+.hero{
+height:400px;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("hero-bg.jpeg") center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
 
-  </style>
+.hero img{
+width:130px;
+border-radius:50%;
+background:white;
+padding:10px;
+margin-bottom:15px;
+}
+
+.hero h2{
+font-size:38px;
+margin:0;
+}
+
+.hero p{
+font-size:18px;
+margin-top:10px;
+}
+
+/* SECTION */
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+.section h2{
+color:#0a7c3e;
+margin-bottom:20px;
+font-size:30px;
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1100px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* BUTTONS */
+.btn{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.facebook{
+background:#3b5998;
+}
+
+.btn:hover{
+opacity:0.85;
+}
+
+/* FOOTER */
+footer{
+background:#0a7c3e;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
 </head>
 
 <body>
 
-  <div class="header">
-    <img src="logo.jpeg"><br><br>
-    <h1>Amolshid Manob Kallan Society</h1>
-    <p>Working for Humanity & Social Welfare</p>
-  </div>
+<header>
+<h1>Amolshid Manob Kallan Society</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#activities">Activities</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-  <div class="section">
-    <h2>Our Activities</h2>
+<section class="hero">
+<img src="logo.jpeg" alt="Logo">
+<h2>Serving Humanity With Care</h2>
+<p>Together We Build A Better Society</p>
+</section>
 
-    <div class="gallery">
-      <img src="activity1.jpeg">
-      <img src="activity2.jpeg">
-      <img src="activity3.jpeg">
-      <img src="activity4.jpeg">
-      <img src="activity5.jpeg">
-    </div>
-  </div>
+<section id="about" class="section">
+<h2>About Us</h2>
+<p>
+Amolshid Manob Kallan Society is committed to social welfare, charity, and humanitarian activities.
+We believe in unity, compassion, and development for underprivileged communities.
+</p>
+</section>
 
-  <div class="contact">
-    <h2>Contact Us</h2>
-    <p>WhatsApp: 
-      <a href="https://wa.me/8801752604001" target="_blank">
-        01752604001
-      </a>
-    </p>
+<section id="activities" class="section">
+<h2>Our Activities</h2>
+<div class="gallery">
+<img src="activity1.jpeg">
+<img src="activity2.jpeg">
+<img src="activity3.jpeg">
+<img src="activity4.jpeg">
+<img src="activity5.jpeg">
+</div>
+</section>
 
-    <p>Other Contact Numbers:</p>
-    <p>01710591024</p>
-    <p>01795637002</p>
-  </div>
+<section id="contact" class="section">
+<h2>Contact Us</h2>
+
+<a href="https://wa.me/8801752604001" target="_blank" class="btn whatsapp">
+WhatsApp
+</a>
+
+<a href="https://www.facebook.com/share/17uMFB98Xw/" target="_blank" class="btn facebook">
+Facebook Page
+</a>
+
+<p style="margin-top:20px;font-weight:600;">
+01710591024 | 01795637002
+</p>
+
+</section>
+
+<footer>
+© 2026 Amolshid Manob Kallan Society | All Rights Reserved
+</footer>
 
 </body>
 </html>
